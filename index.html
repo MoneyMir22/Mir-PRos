@@ -122,10 +122,6 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(30px,4.2vw,46px)
 .budget > *{min-width:0}
 .split{background:var(--surface);border:1px solid var(--line);padding:28px;display:grid;gap:18px}
 .split h3{font-family:var(--f-display);font-size:26px;font-weight:600;margin:0}
-.bar{display:flex;height:14px;border:1px solid var(--line)}
-.bar span{display:block;height:100%}
-.bar .a{background:var(--gold);width:60%}
-.bar .b{background:color-mix(in srgb,var(--gold) 35%,transparent);width:40%}
 .legend{display:grid;gap:8px;font-size:15px}
 .legend div{display:flex;align-items:center;gap:10px}
 .sw{width:12px;height:12px;flex:none}
@@ -271,14 +267,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li><b>Grow when it's working</b><span>Raise, lower or pause your budget month to month.</span></li>
         </ul>
       </div>
-      <div class="split" aria-label="Example of how a monthly budget is split">
-        <h3>Example: how a monthly budget is split</h3>
-        <div class="bar" aria-hidden="true"><span class="a"></span><span class="b"></span></div>
+      <div class="split" aria-label="How your budget is used">
+        <h3>How your budget is used</h3>
         <div class="legend">
           <div><span class="sw" style="background:var(--gold)"></span>Our work: strategy, content, social management, PR outreach</div>
-          <div><span class="sw" style="background:color-mix(in srgb,var(--gold) 35%,transparent)"></span>Paid ads and media spend</div>
+          <div><span class="sw" style="background:color-mix(in srgb,var(--gold) 35%,transparent)"></span>Paid ads and media spend, when your plan needs it</div>
         </div>
-        <p class="note">The split changes with your goals. A press-focused plan may need no ad spend at all. We set the exact numbers with you on the intro call.</p>
+        <p class="note">There's no fixed split. We build each plan around your goals and your number, and show you exactly where every dollar goes before we start. Because AI handles much of the production, even small budgets go further with us.</p>
         <a class="btn primary" href="#contact">Tell us your budget</a>
       </div>
     </div>
