@@ -106,6 +106,24 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(30px,4.2vw,46px)
 .feed-note{font-size:12px;color:var(--muted);margin:10px 0 0}
 @media (max-width:820px){.ai{grid-template-columns:1fr}}
 
+/* results / case studies */
+.cases{display:grid;gap:24px;margin-top:48px}
+.case{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);padding:clamp(22px,4vw,36px);min-width:0}
+.case h3{font-family:var(--f-display);font-size:clamp(26px,3.4vw,34px);font-weight:600;margin:0;color:var(--gold-hi)}
+.case .meta{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:6px 0 0;overflow-wrap:anywhere}
+.case > p{margin:16px 0 0;max-width:70ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:28px 0 8px;padding-block:20px;border-block:1px solid var(--line)}
+.stat{text-align:center;min-width:0}
+.stat b{display:block;font-family:var(--f-display);font-size:clamp(30px,4vw,40px);font-weight:600;line-height:1.1;color:var(--fg)}
+.stat span{display:block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+@media (max-width:600px){.stats{grid-template-columns:1fr 1fr;row-gap:22px}}
+.case ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px;font-size:15px}
+.case li{padding-left:20px;position:relative}
+.case li::before{content:"◆";position:absolute;left:0;top:.05em;font-size:10px;line-height:2.2;color:var(--gold)}
+.cases-cta{margin-top:36px;text-align:center}
+.cases-cta p{font-family:var(--f-display);font-size:clamp(24px,3vw,30px);margin:0 0 18px}
+.cases-cta em{color:var(--gold);font-style:normal}
+
 /* process */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:48px;counter-reset:s}
 .step{min-width:0;border-top:1px solid var(--gold);padding-top:18px}
@@ -159,6 +177,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <nav class="links">
       <a href="#services">Services</a>
       <a href="#ai">AI</a>
+      <a href="#results">Results</a>
       <a href="#process">Process</a>
       <a href="#budget">Pricing</a>
       <a class="cta-link" href="https://calendly.com/amir-mirpros/new-meeting" target="_blank" rel="noopener">Book a call</a>
@@ -237,6 +256,46 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="row"><span class="k">Next action</span><span class="chip">Scale top ad</span></div>
         </div>
         <p class="feed-note">Sample of a weekly client report. Figures are illustrative.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="wrap">
+      <p class="eyebrow">Case studies</p>
+      <h2>One system. Real brands. <em style="color:var(--gold);font-style:italic">Real numbers.</em></h2>
+      <p class="lede">Recent client work from the MIR Pros playbook: media, influence, and relations working as one campaign.</p>
+      <div class="cases">
+        <article class="case">
+          <h3>Anniversary Alley</h3>
+          <p class="meta">Consumer signup service · anniversaryalley.com · Launched October 2026</p>
+          <p>Built from zero and taken to market in days: brand identity, a paid Meta campaign, cinematic video ads, conversion tracking, and a landing-page funnel audit, then put under real ad spend with daily performance management.</p>
+          <div class="stats">
+            <div class="stat"><b>7</b><span>Ads live</span></div>
+            <div class="stat"><b>477</b><span>Clicks, first week</span></div>
+            <div class="stat"><b>5.5%</b><span>Click-through rate</span></div>
+            <div class="stat"><b>$0.11</b><span>Cost per click</span></div>
+          </div>
+          <ul>
+            <li>Full content system running on Facebook and Instagram, with Pinterest and TikTok launches prepared</li>
+            <li>Pixel and lead-event tracking installed and verified, so every dollar is measured</li>
+            <li>Audience testing in progress to turn efficient traffic into signups</li>
+          </ul>
+        </article>
+        <article class="case">
+          <h3>The Laundry Basket</h3>
+          <p class="meta">Local service brand · laundrybasketdelivery.com · DMV, Cleveland &amp; Atlanta</p>
+          <p>A daily engagement engine for an on-demand laundry service: a fresh post every weekday (memes, debates, interactive games, and time-lapse reels), all produced by our team and refined from audience response within hours, not weeks.</p>
+          <ul>
+            <li>Five original posts a week across formats, each built to start conversations</li>
+            <li>Custom video creative produced end-to-end: concept, footage, edit, caption</li>
+            <li>Brand positioning sharpened through live feedback: content that sells the service by standing against the DIY hassle</li>
+          </ul>
+        </article>
+      </div>
+      <div class="cases-cta">
+        <p>Your brand could be next. <em>Start with a free audit.</em></p>
+        <a class="btn primary" href="#contact">Get my free audit</a>
       </div>
     </div>
   </section>
