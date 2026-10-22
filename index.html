@@ -397,13 +397,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           </select>
         </label>
         <label for="budget-range">Monthly budget
-          <select id="budget-range" name="budget">
-            <option>$50 to $500</option>
-            <option>$500 to $1,500</option>
-            <option>$1,500 to $5,000</option>
-            <option>Over $5,000</option>
-            <option>Not sure yet</option>
-          </select>
+          <input id="budget-range" name="budget" type="text" placeholder="e.g. $150 a month, or &quot;not sure yet&quot;" autocomplete="off">
         </label>
         <label for="msg">Tell us about your business<textarea id="msg" name="msg" rows="4"></textarea></label>
         <button class="btn primary" type="submit">Request my call</button>
