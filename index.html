@@ -129,6 +129,11 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(30px,4.2vw,46px)
 .shot{margin:24px 0 0}
 .shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px}
 .shot figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.quote{margin:28px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
+.quote p{font-family:var(--f-display);font-style:italic;font-size:clamp(22px,2.8vw,28px);line-height:1.35;margin:0;max-width:40ch;color:var(--fg)}
+.quote p::before{content:"\201C";color:var(--gold)}
+.quote p::after{content:"\201D";color:var(--gold)}
+.quote cite{display:block;margin-top:12px;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 .cases-cta{margin-top:36px;text-align:center}
 .cases-cta p{font-family:var(--f-display);font-size:clamp(24px,3vw,30px);margin:0 0 18px}
 .cases-cta em{color:var(--gold);font-style:normal}
@@ -325,6 +330,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
               <figcaption><b>Stand for something</b>Values reel: the crew in downtown DC, with the motto and the three values on screen.</figcaption>
             </figure>
           </div>
+          <blockquote class="quote">
+            <p>Everything came out dope. The AI work ethic goes crazy. I love the content, and the website is definitely tough. It has the bones and structure to be great.</p>
+            <cite>Dee · Ten Toes</cite>
+          </blockquote>
           <p style="margin-top:22px"><a class="btn ghost" href="https://claude.ai/artifact/PaRW7s343bPoCWEjeXJypT" target="_blank" rel="noopener">View the Ten Toes site</a></p>
         </article>
         <article class="case">
