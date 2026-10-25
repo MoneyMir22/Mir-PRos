@@ -118,6 +118,18 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(30px,4.2vw,46px)
 .listen-t span{color:var(--muted);font-size:13px}
 .listen audio{width:100%;display:block}
 .listen-n{font-size:12px;color:var(--muted);margin:8px 0 0}
+.buy{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.buy-t{margin:0 0 10px;font-size:15px}
+.buy-t span{color:var(--muted);font-size:13px}
+.buy-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.buy-row a{display:block;text-decoration:none;color:var(--fg);background:var(--bg);border:1px solid var(--line);padding:12px;text-align:center;min-width:0}
+.buy-row a:hover,.buy-row a:focus-visible{border-color:var(--gold)}
+.buy-row a.pop{border-color:var(--gold)}
+.buy-row b{display:block;font-size:14px}
+.buy-row span{display:block;font-family:var(--f-display);font-size:22px;color:var(--gold);margin-top:2px}
+.buy-row small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.buy-n{font-size:12px;color:var(--muted);margin:8px 0 0}
+@media (max-width:520px){.buy-row{grid-template-columns:1fr}.buy-row a{display:flex;justify-content:space-between;align-items:center;text-align:left;gap:10px}.buy-row span{margin:0}}
 @media (max-width:820px){.rx-in{grid-template-columns:1fr;gap:28px}}
 
 /* results / case studies */
@@ -241,7 +253,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
         <div class="btns rx-btns">
           <a class="btn primary" href="/ai-receptionist">See the AI receptionist</a>
-          <a class="btn ghost" href="/ai-receptionist#pricing">View plans</a>
+          <a class="btn ghost" href="/ai-receptionist#pricing">Compare plans</a>
+        </div>
+        <div class="buy">
+          <p class="buy-t"><b>Know what you want? Start now.</b> <span>No call needed.</span></p>
+          <div class="buy-row">
+            <a href="https://buy.stripe.com/eVqaEY9UQb0Qe133h28so01"><b>After Hours</b><span>$149/mo</span><small>+ $199 setup</small></a>
+            <a class="pop" href="https://buy.stripe.com/bJe4gAgje5Gw2il04Q8so02"><b>Booking Pro</b><span>$249/mo</span><small>+ $299 setup</small></a>
+            <a href="https://buy.stripe.com/cNibJ24Aw5Gw1eh6te8so03"><b>24/7 Front Desk</b><span>$399/mo</span><small>+ $399 setup</small></a>
+          </div>
+          <p class="buy-n">Secure checkout by Stripe. Month to month, cancel anytime. We email you within one business day to start your build.</p>
         </div>
       </div>
     </div>
