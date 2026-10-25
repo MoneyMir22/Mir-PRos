@@ -361,9 +361,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <script>
 /* Stripe Payment Links. Paste each plan's link here; until then the button goes to the contact form. */
 var CHECKOUT = {
-  "after-hours": "",
-  "booking-pro": "",
-  "front-desk": ""
+  "after-hours": "https://buy.stripe.com/eVqaEY9UQb0Qe133h28so01",
+  "booking-pro": "https://buy.stripe.com/bJe4gAgje5Gw2il04Q8so02",
+  "front-desk": "https://buy.stripe.com/cNibJ24Aw5Gw1eh6te8so03"
 };
 document.querySelectorAll("[data-plan]").forEach(function (a) {
   var url = CHECKOUT[a.getAttribute("data-plan")];
