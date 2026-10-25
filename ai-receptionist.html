@@ -58,7 +58,8 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:col
 .links{display:flex;gap:24px;font-size:14px;font-weight:500}
 .links a{text-decoration:none;color:var(--muted)}
 .links a:hover,.links a[aria-current]{color:var(--fg)}
-@media (max-width:640px){.links a:not(.cta-link){display:none}}
+@media (max-width:640px){.links{gap:16px}.links a:not(.cta-link):not(.nav-rx){display:none}}
+@media (max-width:380px){.brand small{display:none}}
 .cta-link{color:var(--gold)!important}
 
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
@@ -96,6 +97,11 @@ h2{font-size:clamp(30px,4.2vw,46px);line-height:1.15;margin:10px 0 0;max-width:2
 .booked{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-top:14px;border-top:1px dashed var(--line);font-size:14px}
 .chip{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--gold);color:var(--gold);border-radius:2px;white-space:nowrap}
 .note{font-size:12px;color:var(--muted);margin:10px 0 0}
+.listen{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--gold);padding:16px 18px;margin-top:28px;max-width:520px}
+.listen-t{display:flex;justify-content:space-between;gap:12px;margin:0 0 10px;font-size:15px}
+.listen-t span{color:var(--muted);font-size:13px}
+.listen audio{width:100%;display:block}
+.listen-n{font-size:12px;color:var(--muted);margin:8px 0 0}
 
 /* features */
 .feats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border:1px solid var(--line)}
@@ -179,7 +185,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="brand" href="/">MIR<small>PROS</small></a>
     <nav class="links">
       <a href="/#services">Marketing</a>
-      <a href="/ai-receptionist" aria-current="page">AI Receptionist</a>
+      <a class="nav-rx" href="/ai-receptionist" aria-current="page">AI Receptionist</a>
       <a href="#pricing">Plans</a>
       <a href="#faq">FAQ</a>
       <a class="cta-link" href="#pricing">Get started</a>
@@ -196,6 +202,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="btns">
         <a class="btn primary" href="#pricing">See plans from $149/month</a>
         <a class="btn ghost" href="/?goal=ai-receptionist#contact">Book a free demo call</a>
+      </div>
+      <div class="listen">
+        <p class="listen-t"><b>Hear a sample call</b><span>0:33 · after hours</span></p>
+        <audio controls preload="none" src="/work/ai-receptionist-sample-call.mp3">Your browser can't play this audio.</audio>
+        <p class="listen-n">Sample call with AI-generated voices. Business and caller are fictional.</p>
       </div>
     </div>
     <div>
